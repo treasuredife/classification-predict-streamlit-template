@@ -95,18 +95,7 @@ def my_fmt(x):
     return '{:.4f}%\n({:.0f})'.format(x, total*x/100)
 
 logo = Image.open("resources/imgs/default_edited.png")
-oluyemi_new= Image.open('resources/imgs/yemi edsa picture.JPG')
-oluyemi=oluyemi_new.resize((160,250))
-joshua_new= Image.open('resources/imgs/Eujosh_pic_new.JPEG')
-joshua=joshua_new.resize((160,250))
-abiola_new= Image.open('resources/imgs/Abiola_pic.JPEG')
-abiola=abiola_new.resize((160,250))
-ifeoluwa_new= Image.open('resources/imgs/ifeoluwa_pic_new.JPEG')
-ifeoluwa=ifeoluwa_new.resize((160,250))
-lawson_new=Image.open('resources/imgs/Lawson_pic.JPEG')
-lawson=lawson_new.resize((160,250))
-stephen_new=Image.open('resources/imgs/Stephen_pic_new.JPEG')
-stephen=stephen_new.resize((160,250))
+
 welcome_message='<p style="font-family:Mono space; color:black; font-size: 20px;">Welcome, we are glad to have you here.\
 			Kindly use Navigation on the side to find your way around. Enjoy your stay</p>'
 purpose='<p style="font-family:Mono space; color:black; font-size: 15px; ">The Purpose of Our Organization</p>'
@@ -144,19 +133,19 @@ def main():
 							use to achieve these objectives")
 		st.info("Meet the Team")
 		col1, col2, col3 = st.columns(3) #create images side by side
-		ife = Image.open("resources/imgs/ifeoluwa_pic_new.JPEG")
+		ife = Image.open("resources/imgs/ifeoluwa_pic_new.jpeg")
 		ife =ife.resize((160,250))
 		col1.write("Ifeoluwa Adeoti")
 		col1.image(ife)
 		col1.caption("Ife is the founder and CEO.")
 
-		yemi = Image.open('resources/imgs/yemi edsa picture.JPG')
+		yemi = Image.open('resources/imgs/yemi edsa picture.jpg')
 		yemi= yemi.resize((160,250))
 		col2.write("Oluyemi Alabi")
 		col2.image(yemi)
 		col2.caption("Yemi is the Chief Technical Officer.")
 
-		abiola = Image.open("resources/imgs/Abiola_pic.JPEG")
+		abiola = Image.open("resources/imgs/Abiola_pic.jpeg")
 		abiola=abiola.resize((160,250))
 		col3.write("Abiola Akinwale")
 		col3.image(abiola)
@@ -164,19 +153,19 @@ def main():
 
 		col4, col5, col6 = st.columns(3) #create images side by side
 
-		joshua = Image.open('resources/imgs/Eujosh_pic_new.JPEG')
+		joshua = Image.open('resources/imgs/Eujosh_pic_new.jpeg')
 		joshua= joshua.resize((160,250))
 		col4.write("Joshua Umukoro")
 		col4.image(joshua)
 		col4.caption("Joshua is the Financial Head")
 
-		lawson = Image.open('resources/imgs/Lawson_pic.JPEG')
+		lawson = Image.open('resources/imgs/Lawson_pic.jpeg')
 		lawson= lawson.resize((160,250))
 		col5.write("Lawson Iduku")
 		col5.image(lawson)
 		col5.caption("Lawson is the Head of Human Resources")
 
-		stephen = Image.open('resources/imgs/Stephen_pic_new.JPEG')
+		stephen = Image.open('resources/imgs/Stephen_pic_new.jpeg')
 		stephen= stephen.resize((160,250))
 		col6.write("Stephen Tshiani ")
 		col6.image(stephen)
