@@ -263,7 +263,7 @@ def main():
         	''')   
 		if upload_file is not None:
 			tweet_df = pd.read_csv(upload_file)
-			preprocess(tweet_df['tweets'])
+			#preprocess(tweet_df['tweets'])
 			vect_df = tweet_cv.transform(tweet_df['tweets']).toarray()
 
 			if model_selection =="Multinomial Naive Bayes (Recommended)":
