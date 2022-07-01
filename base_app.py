@@ -302,7 +302,7 @@ def main():
 			classified,"file.csv","text/csv",
 			key='download-csv')
 
-			graph=result['sentiment'].value_counts().plot(kind='pie', annotate=True)
+			graph=result['sentiment'].value_counts().plot(kind='pie')
 			graph= 'pie.png'
 			img = io.BytesIO()
 			plt.savefig(img, format='png')
